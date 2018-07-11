@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dropdown</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" >
+    <link rel="stylesheet" href="../css/styles.css">
+    
+</head>
+<body>
+
+
+    <header class="bgimage">
+        <div class="container">
+                <h1>Headline</h1>
+        </div>
+
+    </header>
+
+    
+    <div class="container">
+        <div class="row">
+                <section class="col-xs-12">
+                        <h1 class="text-danger">Need popper.min.js</h1>
+                    </section>
+        </div>
+      <div class="row">
+        
+        <section class="col-xs-12">
+            <h2>Bootstrap 3</h2>
+            <a href="https://www.quackit.com/bootstrap/bootstrap_3/tutorial/bootstrap_dropdowns.cfm">Complate BS3 tutorial</a>
+            <div class="dropdown">
+                <button type="button" data-toggle="dropdown" id="pettype"
+                aria-haspopup="true" aria-expanded="true"
+                class="btn btn-info dropdown-toggle">Pet Type
+            <span class="caret"></span>
+            </button>
+                <ul class="dropdown-menu" aria-labelledby="pettype">
+                    <li class="dropdown-header">Header</li>
+                    <li><a href="#">Cat</a></li>
+                    <li><a href="#">Dog</a></li>
+                    <li><a href="#">Fish</a></li>
+                    <li class="disabled"><a href="#">Birds</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Header</li>
+                    <li><a href="#">Amphibian</a></li>
+                    <li><a href="#">Reptile</a></li>
+                    <li><a href="#">Other</a></li>
+                </ul>
+
+            </div>
+                
+              
+             
+            
+        
+        </section>
+        <section class="col-xs-12">
+                <h2>Bootstrap 4</h2>
+                <a href="https://www.quackit.com/bootstrap/bootstrap_4/tutorial/bootstrap_dropdowns.cfm">Complate BS4 tutorial</a>
+                <p>
+                    <ol>
+                            <li>Switched from parent selectors to singular classes for all components, modifiers, etc.</li>
+                            <li>Simplified dropdown styles to no longer ship with upward or downward facing arrows attached to the dropdown menu.</li>
+                            <li>Dropdowns can be built with <code>&lt;div&gt;</code>s or <code>&lt;ul&gt;</code>s now.</li>
+                            <li>Rebuilt dropdown styles and markup to provide easy, built-in support for <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> based dropdown items.</li>
+                            <li>Renamed <code>.divider</code> to <code>.dropdown-divider</code>.</li>
+                            <li>Dropdown items now require .<code>dropdown-item</code>.</li>
+                            <li>Dropdown toggles no longer require an explicit <code>&lt;span class="caret"&gt;&lt;/span&gt;</code>; this is now provided automatically via CSS’s <code>::after</code> on <code>.dropdown-toggle</code>.</li>
+                    </ol>
+                </p>
+
+                <div class="dropdown">
+                    <button type="button" data-toggle="dropdown" id="pettype" aria-haspopup="true" aria-expanded="true"
+                            class="btn btn-info dropdown-toggle">
+                        Pet Type
+                    </button>
+
+                    <ul class="dropdown-menu" aria-labelledby="pettype">
+                        <li class="dropdown-header"><a>Header</a></li>
+                        <li class="dropdown-item"><a href="#">Cat</a></li>
+                        <li class="dropdown-item"><a href="#">Dog</a></li>
+                        <li class="dropdown-item"><a href="#">Fish</a></li>
+                        <li class="dropdown-item disabled"><a href="#"></a>Birds</a></li>
+                        <li role="separator" class="dropdown-divider"></li>
+                        <li class="dropdown-header"><a>Header</a></li>
+                        <li class="dropdown-item"><a href="#">Amphibian</a></li>
+                        <li class="dropdown-item"><a href="#">Reptile</a></li>
+                        <li class="dropdown-item"><a href="#">Other</a></li>
+                    </ul>
+    
+                </div>
+
+
+                <h3>Beter way ul li ------> div a</h3>
+                <!-- original -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+                    
+                  
+                 
+                
+            
+            </section>
+      </div><!-- row -->   
+    </div><!-- content container -->
+
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
